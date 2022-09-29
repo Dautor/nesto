@@ -1,0 +1,80 @@
+{super,hyper} + Return
+	kitty
+{super,hyper} + Escape
+	pkill -USR1 -x sxhkd
+hyper + d
+	dmenu_run -l 35
+super + l
+	lock
+super + h
+	lock_and_sleep
+hyper + z ; r
+	rbt
+hyper + z ; s
+	sdn
+hyper + u
+	scratchpad
+
+hyper + shift + e
+	bspc quit
+hyper + shift + r
+	bspc wm -r
+hyper + shift + q
+	bspc node -c
+hyper + k
+	dmenu-kill
+hyper + shift + ctrl + q
+	bspc node -k
+hyper + w
+	bspc desktop -l next
+hyper + f
+	bspc node -t '~fullscreen'
+hyper + ctrl + @space
+	bspc node -t '~floating'
+hyper + ctrl + a
+	bspc node --focus any.urgent
+
+hyper + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+hyper + {p,b,comma,period}
+	bspc node --focus @{parent,brother,first,second}
+hyper + Page_{Down,Up}
+	bspc desktop --focus {next,prev}.local.occupied
+hyper + {_,shift +}{1-9}
+	bspc {desktop --focus,node --to-desktop} $(bspc query --desktops --desktop --names | cut -d'/' -f1)/{1-9}
+hyper + {_,shift + }bracket{left,right}
+	bspc {monitor --focus,node --to-monitor} {prev,next}
+
+hyper + grave
+	pcmanfm
+hyper + e
+	emacs
+hyper + p
+	pavucontrol
+hyper + c
+	networkmanager_dmenu -l 35
+hyper + l
+	passmenu -l 35
+hyper + i
+	kitty -e htop
+
+XF86MonBrightnessDown
+	brightnessctl s 5%+
+XF86MonBrightnessUp
+	brightnessctl s 5%-
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86AudioMute
+	amixer set Master toggle
+
+Print
+	scrot -e 'mv $f ~/screenshots/'
+ctrl + Print
+	flameshot gui
+alt + Print
+	screenshot-window -c
+alt + ctrl + Print
+	screenshot-window

@@ -1,0 +1,35 @@
+
+keycode 121 = XF86AudioMute
+keycode 122 = XF86AudioLowerVolume
+keycode 123 = XF86AudioRaiseVolume
+keycode  90 = U2500
+keycode  91 = U2502
+keycode  87 = U2514
+keycode  88 = U2534
+keycode  89 = U2518
+keycode  83 = U251C
+keycode  84 = U253C
+keycode  85 = U2524
+keycode  79 = U250C
+keycode  80 = U252C
+keycode  81 = U2510
+keycode 160 = XF86ScreenSaver
+keycode 171 = XF86AudioNext
+keycode 172 = XF86AudioPlay
+keycode 173 = XF86AudioPrev
+keycode 198 = XF86AudioMicMute
+keycode 220 = XF86WebCam
+keycode 232 = XF86MonBrightnessDown
+keycode 233 = XF86MonBrightnessUp
+keycode 235 = XF86Display
+keycode 246 = XF86WLAN
+
+! Print screen
+keycode 107 = Delete
+! Alt_R
+keycode 108 = Print Sys_Req Print Sys_Req
+
+clear mod3
+clear mod4
+add mod3 = Hyper_L Hyper_R
+add mod4 = Super_L Super_R

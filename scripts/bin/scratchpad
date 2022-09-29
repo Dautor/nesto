@@ -1,0 +1,8 @@
+#!/bin/sh
+id=$(xdo id -n dropdown);
+if [ -z "$id" ]
+then
+	kitty --name dropdown -o initial_window_width=1300 -o initial_window_height=900 -o remember_window_size=no &
+else
+	bspc node "$id" --flag hidden -f
+fi

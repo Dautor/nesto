@@ -1,0 +1,4 @@
+#!/bin/sh
+lock &
+sleep 0.15
+sudo systemctl suspend
