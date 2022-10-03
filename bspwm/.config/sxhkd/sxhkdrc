@@ -14,6 +14,8 @@ hyper + z ; s
 	sdn
 hyper + u
 	scratchpad
+hyper + Tab
+	bspc desktop -f last
 
 hyper + shift + e
 	bspc quit
@@ -49,8 +51,6 @@ hyper + grave
 	pcmanfm
 hyper + e
 	emacs
-hyper + p
-	pavucontrol
 hyper + c
 	networkmanager_dmenu -l 35
 hyper + l

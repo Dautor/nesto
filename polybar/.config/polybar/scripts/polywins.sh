@@ -187,4 +187,5 @@ generate_window_list() {
 
 # --- }}}
 
+# NOTE: polybar will rerun this script every time it exits which will result in 100% cpu usage on 1 core
 main "$@"
