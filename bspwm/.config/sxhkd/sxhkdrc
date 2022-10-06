@@ -14,6 +14,8 @@ hyper + z ; s
 	sdn
 hyper + u
 	scratchpad
+hyper + p
+	pavucontrol
 hyper + Tab
 	bspc desktop -f last
 
@@ -21,7 +23,7 @@ hyper + shift + e
 	bspc quit
 hyper + shift + r
 	bspc wm -r
-hyper + shift + q
+{hyper,super} + shift + q
 	bspc node -c
 hyper + k
 	dmenu-kill
@@ -50,18 +52,18 @@ hyper + {_,shift + }bracket{left,right}
 hyper + grave
 	pcmanfm
 hyper + e
-	emacs
+	emacsclient -c -a 'emacs --daemon'
 hyper + c
-	networkmanager_dmenu -l 35
+	doas networkmanager_dmenu -l 35
 hyper + l
 	passmenu -l 35
 hyper + i
 	kitty -e htop
 
 XF86MonBrightnessDown
-	brightnessctl s 5%+
-XF86MonBrightnessUp
 	brightnessctl s 5%-
+XF86MonBrightnessUp
+	brightnessctl s 5%+
 
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%
