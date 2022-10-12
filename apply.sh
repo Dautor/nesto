@@ -1,3 +1,4 @@
 #!/bin/sh
-
-stow */
+set -e
+cd stow
+stow -t ~/ */

@@ -10,7 +10,7 @@ SETUVAR _fish_abbr_ss:pacman\x20\x2dSs
 SETUVAR _fish_abbr_i:yay\x20\x2dS
 SETUVAR _fish_abbr_u:yay\x20\x2dSyu
 SETUVAR _fish_abbr_s:yay\x20\x2dSs
-SETUVAR _fish_abbr_r:yay\x20\x2dRcns
+SETUVAR _fish_abbr_r:yay\x20\x2dRns
 SETUVAR _fish_abbr_rr:yay\x20\x2dSc
 SETUVAR _fish_abbr_yt:yt\x2ddlp\x20\x2dic\x20\x2d\x2dadd\x2dmetadata
 SETUVAR _fish_abbr_yta:yt\x2ddlp\x20\x2dxic\x20\x2d\x2dadd\x2dmetadata\x20\x2df\x20bestaudio
