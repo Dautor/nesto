@@ -2,13 +2,12 @@
 set -e
 
 git clone https://aur.archlinux.org/yay-bin.git
-cd yay
+cd yay-bin
 makepkg -si
 cd ..
-rm -r yay
+rm -r yay-bin
 
 packages_aur="
-delta
 ookla-speedtest-bin
 qdirstat
 google-chrome
