@@ -1,2 +1,2 @@
 #!/bin/bash
-prompt "Reboot?" "sudo reboot"
+prompt "Reboot?" "doas /usr/bin/reboot"

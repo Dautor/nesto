@@ -1,2 +1,2 @@
 #!/bin/bash
-prompt "Shutdown?" "sudo shutdown now"
+prompt "Shutdown?" "doas /usr/bin/shutdown now"

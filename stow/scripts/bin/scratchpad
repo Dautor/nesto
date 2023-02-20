@@ -4,5 +4,7 @@ if [ -z "$id" ]
 then
 	kitty --name dropdown -o initial_window_width=1300 -o initial_window_height=900 -o remember_window_size=no &
 else
+	monitor=$(bspc query --monitors --monitor)
 	bspc node "$id" --flag hidden -f
+	bspc node -m $monitor --follow
 fi

@@ -54,7 +54,7 @@ hyper + grave
 hyper + e
 	emacsclient -c -a 'emacs --daemon'
 hyper + c
-	doas networkmanager_dmenu -l 35
+	doas /usr/bin/networkmanager_dmenu -l 35
 hyper + l
 	passmenu -l 35
 hyper + i
